@@ -22,6 +22,7 @@ img, pre{
   box-shadow: 0px 0px 10px #888888;
   margin-bottom: 1.5em;
 }
+
 figcaption{
   text-align: center;
 }
@@ -29,6 +30,24 @@ figcaption{
 figure{
   margin-top: 2.5em;
   margin-bottom: 2.5em;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th {
+   text-align : center;
+   padding-left: 5px;
+   padding-right: 5px;		
+}
+
+td {
+   text-align : center;
+   padding-left: 5px;
+   padding-right: 5px;		
 }
 
 figure img {
