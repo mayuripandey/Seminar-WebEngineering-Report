@@ -10,29 +10,29 @@
 <body>
     <header>
         <h2>Seminar Web Engineering in Winter semester 2020</h2>
-		<h1>Geospatial Databases - 122</h1>
+		<h1>Geospatial Databases</h1>
         <h2 class="author">Mayuri Pandey(625555)</h2>
         <h2 class="author">Khushbu Navdiwala(621094)</h2>
         
 		<h3 class="affiliation">
 			Professorship Distributed and Self-Organizing Computer System<br/>
 			Technische Universität Chemnitz<br/>
-			Chemnitz, Deutschland
+			Chemnitz, Germany
 		</h3>
     </header>
     <section>
-        <h2>1. Overview</h2>
-        <p><i>Author:Mayuri Pandey</i></p>
+        <h2>1.Overview</h2>
+        <p><i>Author: Mayuri Pandey</i></p>
         <p> 
-            Data can be found abundantly over the Internet, and there are databases available, which help in the storage and retrieval of those data and information. Nowadays, there is a rapid growth of location-specific devices that need geographical features and spatial data, and there exist severe challenges to maintain such data. Hence in 1997 the Open Geospatial Consortium developed few specifications and set few standards for adding various spatial functionality to the database systems.<a href=#r1>[1]</a>
+            Data can be found abundantly over the Internet, and there are databases available, which help in the storage and retrieval of those data and information. Nowadays, there is a rapid growth of location-specific devices that need geographical features and spatial data, and there exist several challenges to maintain such data. Hence in 1997 the Open Geospatial Consortium developed few specifications and set few standards for adding various spatial functionality to the database systems.<a href=#r1>[1]</a>
         </p>
         <p>
             Therefore, in this regard, Geospatial Database or Spatial Data has been well-defined as collective sets of stored information which is used to depict any data which is related to or consists of information about a particular location on the Earth’s Surface. The main goal of this report is to understand the concept of geospatial databases in brief and to have a thorough understanding of various tools available, how these tools will help us to optimize data.<a href=#r2>[2]</a> 
         </p>
 	</section>
     <section>
-        <h2>2. Geospatial Databases</h2>
-        <p><i>Author:Mayuri Pandey</i></p>
+        <h2>2.Geospatial Databases</h2>
+        <p><i>Author: Mayuri Pandey</i></p>
         <p> 
             Geospatial database, defined as a group of different data sets stored in a common System file folder. The database can be generalized as containing geographic information of countries, cities, different administrative divisions,etc. It mainly has data about the locations, geographic features and the relationship between them, which are stored as coordinates and topology. It is structured in a way as to ensure maximum productivity from the database.<a href=#r2>[2]</a>
         </p>
@@ -41,26 +41,118 @@
         </p>
     </section>
     <section>
-        <h2>4. Tools</h2>
-        <p><i>Author:Mayuri Pandey</i></p>
+        <h2>3.Vector and Raster data in Geospatial database </h2>
+        <p><i>Author: Khushbu Navdiwala</i></p>
+        <p> 
+           <b>Raster Data:</b> 
+           Pixels that are assembled through rows or columns are made by the Raster Model. This data included in digital drone footage, space-station photos, or even digital information will specifically be shown. There is 2 type of Raster Data:
+        <ol>
+           <li>
+              Discrete raster is easy to separate as data 
+              because they are made by themes, Where one value may describe land cover, a river can indicate another.
+           </li>
+           <li>
+              Continuous rasters represent above/below sea level values. A good example of continuous raster data is digital elevation models(3d surface visualization).<a href=#r17>[17]</a>
+           </li>
+        </ol>
+        </p>
+        <p> 
+           <b>Vector Data:</b> 
+           Vector data are made of points, lines, and polygons, all of which are used in maps to reflect real-world characteristics.
+           All geometry types store details in x/y coordinates.<a href="#17">[17]</a>
+        <ol>
+           <li>
+              Point data typically reflects small objects, such as tiny houses, pylons, important landmark features.
+           </li>
+           <li>
+              Line data reflect characteristics such as transport (roads, cart paths, trails), rivers, cables, pipes.
+           </li>
+           <li>
+              Polygon data reflects characteristics, such as land cover, area hydrography, large structures, boundaries of city/county/state/country.<a href=#r17>[17]</a>
+           </li>
+        </ol>
+        </p>
+     </section>
+     <section>
+        <h2>4.Type of Geospatial Databases  </h2>
+        <p><i>Author: Khushbu Navdiwala</i></p>
+        <p> 
+           A geodatabase is a "box"  that is used to contain a data array. There are three type of datatype:<a href=#r3>[3]</a>
+        <p><b> In files system </b>information is stored in the storage device as folders. All information is provided as a document that might have a length of up to 1 TB. Compared to the personal geodatabase a  file database is strongly advised.<a href=#r3>[3]</a></p>
+        <p><b>Personal Geodatabases</b> All resources are stored in a 2 GB limited Microsoft Access data file.<a href=#r3>[3]</a></p>
+        <p><b>Enterprise databases</b> also referred to as multi-user, can have large consumer ranges and counts. Collected by either Oracle, Microsoft SQL Server, IBM DB2, IBM Informix, or PostgreSQL in a database system.<a href=#r3>[3]</a></p>
+        <figure>
+           <img src="copy.jpg"  width="500" height="333">
+           <figcaption>
+              <strong>Fig 1</strong>: Datatype of Geospatial Database<a href="#r20">[20]</a>
+           </figcaption>
+        </figure>
+        </p>
+        
+        <table>
+           <tr>
+              <th>Characteristics </th>
+              <th>Enterprise geodatabase</th>
+              <th>File geodatabase</th>
+              <th>Personal geodatabase</th>
+           </tr>
+           <tr>
+              <td>Description</td>
+              <td>
+                 A list in a database schema of various types of GIS datasets maintained as lists
+              </td>
+              <td>A set of various varieties of GIS data kept in a document of a storage device</td>
+              <td>
+                 Initial ArcGIS geodatabase data format which is preserved and supported in Microsoft Access data files
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 Number of users
+              </td>
+              <td>
+                 MultiUser: various viewers and several writers
+              </td>
+              <td>Singular user and limited workgroups:  numerous viewers and the few writers</td>
+              <td>
+                 A small group of  user and fewer dataset workgroups: numerous viewers but only one can write
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 Security and permissions
+              </td>
+              <td>
+                 Offered by DBMS
+              </td>
+              <td>Security of an operating file system</td>
+              <td>Protection for Windows filesystems</td>
+           </tr>
+        </table>
+        <br>
+        <label style="text-align: center; display: block;"><strong>Table</strong>: Comparison of Geospatial Datatype <a href="#r3">[3]</a></label>
+     </section>
+    <section>
+        <h2>5.Tools</h2>
+        <p><i>Author: Mayuri Pandey</i></p>
         <p>There exist various tools or software for analyzing and computing different patterns, which assists the user to understand them more precisely. The functionality of  each of them is listed below: <a href="#r4">[4]</a></p>
         <p><b>Falconview:</b> This application supports multiple platform mapping functions. It has the ability to showcase a wide range of maps including varied types of geographically referenced overlays.It lacks spatial analysis and also it has limited cartography and mapping tools. Data editing and management are quite difficult in this software.<a href="#r4">[4]</a><a href="#r5">[5]</a></p>
-        <p><b>GeoDa:</b>It is free software that has the capability to conduct an analysis of spatial data, spatial modeling, etc. It mainly deals with geostatistics and as an introductory tool for beginners to work with spatial data. This tool is promising in various sectors such as health care, economic development, etc.<a href="#r4">[4]</a><a href="#r6">[6]</a></p>
-        <p><b>GrassGIS:</b>This software is designed for the management of land and planning of the environment. It is a free software that is valued for its various uses in sectors concerning analysis, manipulation of terrain, image processing, etc. GrassGIS supports 3D raster analysis.<a href="#r4">[4]</a><a href="#r7">[7]</a></p>
-        <p><b>ILWIS:</b>It is an open source software for wide and easy access for users.Some of the basic areas of operation for this software are editing, digitization and displaying geographic data. Further the software also facilitates remote sensing with tools for image enhancement, classification and band manipulation.<a href="#r4">[4]</a><a href="#r8">[8]</a></p>
-        <p><b>MapWindows:</b>The software is not a complete software for utilisation in the Geo spatial data processing of the intended tasks such as identity features, map viewer, processing tools and print layout. This software is free to use.<a href="#r4">[4]</a><a href="#r9">[9]</a></p>
+        <p><b>GeoDa:</b> It is free software that has the capability to conduct an analysis of spatial data, spatial modeling, etc. It mainly deals with geostatistics and as an introductory tool for beginners to work with spatial data. This tool is promising in various sectors such as health care, economic development, etc.<a href="#r4">[4]</a><a href="#r6">[6]</a></p>
+        <p><b>GrassGIS:</b> This software is designed for the management of land and planning of the environment. It is a free software that is valued for its various uses in sectors concerning analysis, manipulation of terrain, image processing, etc. GrassGIS supports 3D raster analysis.<a href="#r4">[4]</a><a href="#r7">[7]</a></p>
+        <p><b>ILWIS:</b> It is an open source software for wide and easy access for users.Some of the basic areas of operation for this software are editing, digitization and displaying geographic data. Further the software also facilitates remote sensing with tools for image enhancement, classification and band manipulation.<a href="#r4">[4]</a><a href="#r8">[8]</a></p>
+        <p><b>MapWindows:</b> The software is not a complete software for utilisation in the Geo spatial data processing of the intended tasks such as identity features, map viewer, processing tools and print layout. This software is free to use.<a href="#r4">[4]</a><a href="#r9">[9]</a></p>
         <p><b>QGIS</b> It is basically a geo information system, which enables users to not only examine  and change the spatial data but also create and exchange pictorial maps. A plus point of QGIS is that it can handle shapefiles, dxf, coverages, PostGIS formats. Georeferencing of images is also possible with this software.<a href="#r4">[4]</a><a href="#r10">[10]</a></p>
-        <p><b>gvSIG:</b>This application is desktop-oriented and has the ability to store, analyze, capture any geographical referenced information to resolve complicated issues. It is also counted as the base 3D visualization tool available having the most interactive user-friendly UI.<a href="#r4">[4]</a><a href="#11">[11]</a></p>
-        <p><b>SagaGIS:</b>Originally designed for analysis of terrains such as watershed extraction, hill shading, and visibility analysis. The tools facilitate operations with multiple windows to lay forward all the analysis such as maps, scattered plots, histograms, etc besides providing methods related to geosciences to the geoscientific community.<a href="#r4">[4]</a><a href="#r12">[12]</a></p>
-        <P><b>uDig:</b>This application is free to use having an intuitive user-friendly UI, It is a desktop-oriented application that is supported by all operating systems and also provides the framework on which analytical problems can be resolved.<a href="#r4">[4]</a><a href="#r13">[13]</a>
+        <p><b>gvSIG:</b> This application is desktop-oriented and has the ability to store, analyze, capture any geographical referenced information to resolve complicated issues. It is also counted as the base 3D visualization tool available having the most interactive user-friendly UI.<a href="#r4">[4]</a><a href="#11">[11]</a></p>
+        <p><b>SagaGIS:</b> Originally designed for analysis of terrains such as watershed extraction, hill shading, and visibility analysis. The tools facilitate operations with multiple windows to lay forward all the analysis such as maps, scattered plots, histograms, etc besides providing methods related to geosciences to the geoscientific community.<a href="#r4">[4]</a><a href="#r12">[12]</a></p>
+        <P><b>uDig:</b> This application is free to use having an intuitive user-friendly interface. It is a desktop-oriented application that is supported by all operating systems and also provides the framework on which analytical problems can be resolved.<a href="#r4">[4]</a><a href="#r13">[13]</a>
         </P>
     </section>
     <section>
-        <h2>5. Comparison of Different tools:</h2>
-        <p><i>Author:Mayuri Pandey</i></p>
-        <table >
+        <h2>6.Comparison of Different tools:</h2>
+        <p><i>Author: Mayuri Pandey</i></p>
+        <table>
             <tr>
-               <tbody> <th>Tools/Software</th>
+               <tbody><th>Tools/Software</th>
                 <th>Supported by all operating System</th>
                 <th>Open Source</th>
                 <th>Cartographical operations</th>
@@ -72,102 +164,99 @@
             </tr>
             <tr>
                 <th>FalconView</th>
-                <th>No</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Partially
-                    supported</th>
-                <th>Yes</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Partially supported</td>
+                <td>Yes</td>
             </tr>
             <tr>
                 <th>GeoDa</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Partially
-                    supported</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Partially
-                    supported</th>
-                <th>Yes</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Partially supported</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Partially supported</td>
+                <td>Yes</td>
             </tr>
             <tr>
                 <th>GrassGIS</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>No</th>
-                <th>Yes</th>
-                <th>Yes</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
             </tr>
             <tr>
                 <th>ILWIS</th>
-                <th>No</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
             </tr>
             <tr>
                 <th>MapWindow</th>
-                <th>No</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>No</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
             </tr>
             <tr>
                 <th>gvSIG</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Medium</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Medium</td>
             </tr>
             <tr>
                 <th>SAGA Gis</th>
-                <th>Partially
-                    supported</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
+                <td>Partially supported</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
             </tr>
             <tr>
                 <th>uDig</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Partially supported</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Medium</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Partially supported</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Medium</td>
             </tr>
         </table> 
         </table>
         <br>
+         <label style="text-align: center; display: block;"><strong>Table</strong>: Comparison of Geospatial Database Tools <a href="#14">[14]</a></label>
 <section>
 <p>Each tool has its own flexibility of functionalities, few of them are briefly explained below:</p>
-<p><b>Supported by all Operating Systems:</b> There are various operating systems available such as Windows, macOS , Linux and, Android. Each software or tool has been designed such that it can give the user flexibility to use it on these platforms.<a href="#r14">[14]</a></p>
+<p><b>Supported by all Operating Systems:</b> There are various operating systems available such as Windows, macOS, Linux Android. Each software or tool has been designed such that it can give the user flexibility to use it on these platforms.<a href="#r14">[14]</a></p>
 <p><b>Open Source</b>: This criteria states that whether the tool or software in use is freely available or it is a paid version where the user needs to pay a certain amount to use the tool. <a href="#r14">[14]</a></p>
 <p><b>Cartographical operations:</b> The operations let the user zoom and pan the extensions of the map and restructure the map components i.e, Map legend, north arrow, scale bar, and inset maps to name a few. <a href="#r14">[14]</a></p>
 <p><b> Geoprocessing:</b> Geoprocessing can be defined as an operation that uses a dataset as an input and performs operations on that specific dataset, hence returning the operation as an output dataset as result. <a href="#r14">[14]</a></p>
@@ -178,11 +267,11 @@
 </section>
     
 <section>
-        <h2>6.Demonstration</h2>
-        <p><i>Author:Mayuri Pandey</i></p>
+        <h2>7.Demonstration</h2>
+        <p><i>Author: Mayuri Pandey</i></p>
         <p>Geographical information systems help us find a wide range of geographical information all over the earth surface, so keeping in mind the different functionalities of each tool, for our demonstration we have used GrassGIS, like other tools, this also had its own share of pros and cons. However, why this tool has been used and what are the features that it provides has been explained in brief below:</p>
         <h3>GrassGIS:</h3>
-        <p>GrassGIS is a typical tool used in finding Geographical Information systems. It is specially designed in order to analyze and manage the vector and raster data, model the spatial data, 3D visualization of the map and geoprocessing. [15]It is free and open source software. We chose this tool for a deep understanding of the geospatial databases for many reasons, for instance, there are no limitations of operating systems, it supports Linux, Windows and Mac and also it consists of an intuitive, user-friendly GUI and command line, the backend language used here is Python, while using the software, the user need not need to know about the language and can work by knowing few basic commands in the command line. GrassGIS supports all the SQL interface functionalities.<a href="#r15">[15]</a><a href="#r16">[16]</a></p>
+        <p>GrassGIS is a typical tool used in finding Geographical Information systems. It is specially designed in order to analyze and manage the vector and raster data, model the spatial data, 3D visualization of the map and geoprocessing. [15]It is free and open source software. We chose this tool for a deep understanding of the geospatial databases for many reasons, for instance, there are no limitations of operating systems, it supports Linux, Windows and Mac and also it consists of an intuitive, user-friendly GUI and command line, the backend language used here is Python, while using the software, the user is not required to know about the language and can work by knowing few basic commands in the command line. GrassGIS supports all the SQL interface functionalities.<a href="#r15">[15]</a><a href="#r16">[16]</a></p>
             
         <p>To understand this platform in brief, we need to understand few very important aspects of the tool, these are explained below:</p>
         <p><b>Terrain Analysis:</b> It assists in detailed analysis and interpretation of the various topological features through the Geographical Information System. The different Terrain Analysis includes a slope, aspect, viewshed, shaded surfaces, elevations etc. It also shades the elevation layer we came.<a href="#r16">[16]</a></p>
@@ -226,8 +315,93 @@
                   </figure>
     </section>
     <section>
-        <h2>Conclusion</h2>
-        <p><i>Author:Mayuri Pandey, Khushbu Navdiwala</i></p>
+        <h2>8.Advantages and Disadvantages of Geospatial Databases</h2>
+        <p><i>Author: Khushbu Navdiwala</i></p>
+        <p> 
+           <b>Advantages</b><a href="#r19">[19]</a>
+        <p>Every GIS user's search is to construct a more precise representation of the real world.  for many applications, this technology will take you closer to the objective. The basic concept behind this technology is to make it more intuitive to work with GIS data and applications. Any of the features that make it so useful to use this technology:<a href="#r21">[21]</a></p>
+        <ol>
+           <li>
+              <b>Centralized data management:</b> In the same geospatial database, you can store various spatial and tabular data formats; it has never been easier to handle and access data. Protection and access rights for multi-users can be handled down to the level of the individual feature class.<a href="#r21">[21]</a>
+           </li>
+           <li>
+              <b>Continuous Sets of features:</b> Without tiles or other spatial partitions, it can handle large feature sets. Based on the necessary data, you can set the spatial domain for each geodatabase you can generate.<a href="#r21">[21]</a>
+           </li>
+           <li>
+              <b>More detailed editing of data:</b> Validation rules will avoid several mistakes and recognize others. You can monitor interactions and relationships among features with validation rules and define appropriate values for attributes.<a href="#r21">[21]</a>
+           </li>
+           <li>
+              <b> Versioning:</b> Versioning is enabled by multi-user geodatabases, which means that more than one person can modify the database simultaneously. Using a conflict resolution dialog, you can reconcile modifications to the same features or attributes by more than one user. When disputes are settled, the database's master version is modified. In addition to simplifying the process of editing, versioning can be used by organizations to handle alternative engineering.<a href="#r21">[21]</a>
+           </li>
+           <li>
+              <b>Using this technology,</b> we can get some specific visual location information, it has the ability to make maps from given images, and also can be used for large projects which are connected with geography.
+              It also supports efficiency, then easy to gather information by using different types of tools, giving high precision for any result, it estimates accurate presumptions and tests.<a href="#r19">[19]</a><a href="#22">[22]</a>
+           </li>
+           <li>A normal database system uses indexes; spatial databases use a spatial index to speed up the operations of the database.<a href="#r19">[19]</a><a href="#22">[22]</a>
+           </li>
+           
+           <li> <b>From a financing point of view,</b> Geospatial is a one-off investment.  It can be utilized in the longer term for further observation as long as the information is gathered. It chooses to keep vibrant after two decades of advent. In recent years, the usage of this technology continues to increase at an impressive speed as more and more users cherish the value which is derived over the years, the performance of the method/task has been boosted by the adoption of this technology.<a href="#r19">[19]</a><a href="#22">[22]</a>
+           </li>
+        </ol>
+        <b>Disadvantage</b><a href="#r19">[19]</a><a href="#r22">[22]</a>
+        <ol>
+           <li>
+              Geospatial database is very spendy software and for some tasks, it is important that it needs immense data input. Sometimes it's prone to wrong data that pass errors. It has an offense of privacy.
+           </li>
+           <li>This technology demand signals mostly from backwoods as it is largely depending on this so maybe geographical flaws arise as we used a large scale as our planet is a circle.</li>
+           <li>Financial backing for the geospatial database is required because it is very expensive.</li>
+           <li>The lack of understanding about the robustness of this technology is the greatest con of the geospatial industry. For individuals looking to leverage the technology to its fullest potential, this is the greatest hurdle. Not understanding the significant applications makes it much harder for individuals to use the technology. </li>
+           <li>We can see a change in the development of knowledge as the level of awareness is raised. On the other hand, the shortage of human capital is considered by industry partners as the greatest impediment to offering or building an effective solution. The implementation of these technologies uses complex abilities, understanding, and awareness.</li>
+           <li>Lack of knowledge about tools can lead to difficulty in implementation. 
+           </li>
+        </ol>
+        </p>
+     </section>
+     <section>
+        <h2>9.Applications of Geospatial Database</h2>
+        <p><i>Author: Khushbu Navdiwala</i></p>
+        <p> 
+           <b>Geospatial in Retail:
+           </b>
+           Right now, data is an essential part of the world.  In order to obtain accumulation and digital evolution, big companies like Google, Amazon and Walmart have esteemed the importance of geospatial data, and now others are following them. In particular, spatial data may support facts about the market, accommodation rates, financial production, residents, and length of existence for retailers.
+           The brands and the goods they carry are calculated by these data.
+           EX: Businesses such as Subway and McDonalds will evaluate desirable ideal sites in a common old-fashion sector, such as investment or junk food and assessment of the past success of current locations.
+           When selecting a location, socio-economic details such as road conditions, rush hours and households in the area will be beneficial. Geospatial data could also provide knowledge on competitors in the field and anticipate potential developments or infrastructure projects that can influence the economy.
+           For instance, assume a significant, long-planned route construction is planned that will affect rush hour concepts and business location connectivity.
+           <a href="#r18">[18]</a>
+        </p>
+        <p> 
+           <b>Geospatial in Healthcare: </b>
+           Healthcare is an important sector in which we every year devote immense resources. Once a year flu seasons affect lots of humans around the globe and nowadays it raised by COVID-19. Researchers and data technologists searching the latest ways of fighting all health problems. Geospatial database gives vital components for dealing with this challenge of virus outbreaks. For both the study of a population of the same age, sex, race, and social status and the history of health care, geospatial data is essential.  Only then can we begin to care about the effects on society and personal circumstances when we "recognize planet," in the process of creating a brand and key drivers then we remove it  get to know in which way a community is shaped by social expectations.
+           Currently, multiple illnesses are being recognized using geographic methods. Rain place, environmental damage, or people's nomadic activities can all give hints and details to predict where there will be the highest need for healthcare in the long term. For example, this technology is used in Africa to reveal and map rubbish dumps as this is an effective breeding ground for insects carrying viruses.
+           Using this technology for data and research refers to the health insurance industry's regular impact on quality. Geospatial application is capable of identifying, updating service providers about changes in consumer behavior, ecological consequences, risky area recognition, improvement and the requirement for infrastructure that can be implemented should provide the best advantage.
+           <a href="#r18">[18]</a>
+        </p>
+        <p> 
+           <b>Geospatial in Finance: </b>
+           Lots of financial services today use this technology for research and evidence in choice processes. Manufacturers can access new sets of details using geospatial data and having geospatial survey.
+           conceptualizing commercial property or shareholdings associated with a specific project.
+           Tracking changes with time to organizational, trade or territorial blooming and production.
+           The examination of resources and amenities could have a direct effect on expenditure in a locality.
+           Using geospatial data to avoid incomplete or wrong customer transactions is one more benefit.
+           All these Examples give us brief details about the benefit of this technology and helps us to take a better final decision. And more importantly, we can diminish the investment damages that we could not
+           do years ago.
+           <a href="#r18">[18]</a>
+        </p>
+        <p> 
+           <b>Geospatial in Logistics/Transportation:</b>
+           Predominantly, with the permit of maps for direction and mobility, geospatial data has been most commonly related to transport. However, with plenty of digital maps that are changing the way to view our planet, we have seen a number of new applications are reachable.
+           The financial system of today is oriented on how faster and cheaper outputs can be delivered while still maintaining high goods. In supply chains and routing through highways, railways, ports/sea and airports geospatial data have been a primary factor. By decreasing the difficulty of traveling broad geographic areas, organizations are able to step up their game with this data. Such activities can be done in
+           Use global positioning systems (GPS) for managing and tracing vehicles to speed up schedules.
+           Using network analysis for worthier performance of goods shipping.<a href="#r18">[18]</a>
+        </p>
+     </section>
+
+
+
+    <section>
+        <h2>10.Conclusion</h2>
+        <p><i>Author: Mayuri Pandey, Khushbu Navdiwala</i></p>
         <p>After thorough research and understanding of the Geographical Information System, we can say that Geospatial Databases helps in achieving great efficiency and saves a lot of problem solving time. it helps users to have a better understanding and conceptualizing the different locations. Geospatial database assists in understanding and developing the most useful solution to any user-specific geographical data. Geospatial Database benefits not only the small but organizations of all sizes and industries of different scales. Various Innovation operations are looking for better ways to provide these frameworks with much more specific information. Furthermore, people have begun to realize that a correct decision about a specific location leads to the success of any strategic research and thus increasing their system results.</p>
     </section>
     	
@@ -235,26 +409,52 @@
     
     	
 	<section class="references">
-	   		<h2>Bibliography</h2>
-            <p class="reference" id="r1">[1] Geospatial Database,Wikipedia[Online] Available:  <a href="https://en.wikipedia.org/wiki/Spatial_database#Geodatabase">https://en.wikipedia.org/wiki/Spatial_database#Geodatabase</a>[Accessed: 01.01.2021]</p>
-            <p class="reference" id="r2">[2] An overview of Geodatabase[Online] Available: <a href="https://desktop.arcgis.com/en/arcmap/10.3/manage-data/geodatabases/what-is-a-geodatabase.htm">"https://desktop.arcgis.com/en/arcmap/10.3/manage-data/geodatabases/what-is-a-geodatabase.htm"</a> [Accessed: 29.12.2020]</p>
-    		<p class="reference" id="r3">[3] Datatype of geospatial database[Online] Available:<a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/types-of-geodatabases.htm">"https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/types-of-geodatabases.htm</a> [Accessed: 14.01.2021]
-            <p class="reference" id="r4">[4] Amit Paul Chowdhury, (2017)”.Top 10 best Geospatial tools for GIS”[Online]Available:<a href="https://analyticsindiamag.com/top-10-best-geospatial-tools-gis-mapping-data-visualization/">https://analyticsindiamag.com/top-10-best-geospatial-tools-gis-mapping-data-visualization/ </a> [Accessed: 19.01.2021]</p>
-    		<p class="reference" id="r5">[5] John Pyles, Falconview,[Online] Available: <a href="https://www.gtri.gatech.edu/initiatives/falconview"> https://www.gtri.gatech.edu/initiatives/falconview</a> [Accessed in 19.01.2021]</p>
-    		<p class="reference" id="r6">[6] Mapscaping ,Free Geoinformatics Software,[Online] Available: <a href="https://mapscaping.com/pages/free-geoinformatics-software">https://mapscaping.com/pages/free-geoinformatics-software</a> [Accessed: 19.01.2021]</p>
-            <p class="reference" id="r7">[7] OSGEO,GrassGIS [Online] Available: <a href="https://www.osgeo.org/projects/grass-gis/"> https://www.osgeo.org/projects/grass-gis/</a>[Accessed: 19.01.2021]</p> 
-    		<p class="reference" id="r8">[8] ILWIS,[Online] Available: <a href="https://www.itc.nl/ilwis/"> https://www.itc.nl/ilwis/ </a> [Accessed: 20.01.2021].</p>
-    		<p class="reference" id="r9">[9] MapWindow,[Online] Available: <a href=" https://plagiarismdetector.net/"> https://plagiarismdetector.net/</a> [Accessed: 20.01.2021].</p>
-            <p class="reference" id="r10">[10] QGIS,Wikipedia[Online], Available <a href="https://en.wikipedia.org/wiki/QGIS">https://en.wikipedia.org/wiki/QGIS</a> [Accessed: 20.01.2021]</p>
-            <p class="reference" id="r11">[11] OSGEO,gvSIG Desktop[Online], Available: <a href="https://www.osgeo.org/projects/gvsig/">https://www.osgeo.org/projects/gvsig/</a> [Accessed: 20.01.2021].</p>
-            <p class="reference" id="r12">[12] oconrad recklov_w,SAGA GIS [Online] Available: <a href="https://sourceforge.net/projects/saga-gis/">=https://sourceforge.net/projects/saga-gis/</a> [Accessed: 20.01.2021].</p>
-            <p class="reference" id="r13">[13] uDIG GIS,[Online], Available: <a href= "http://udig.refractions.net/"> http://udig.refractions.net/ </a> [Accessed: 20.01.2021]. </p> 
-            <p class="reference" id="r14">[14] WHO/HQ/WHE/HIM/MAP (GIS team) ,Comparison of Geographic Information Systems (GIS) software ,WHO, Geneva,Created on March 12,2018</p> 
-            <p class="reference" id="r15">[15] GrassGIS, [Online], Available: <a href= "https://grass.osgeo.org/download/data/">https://grass.osgeo.org/download/data/.</a> [Accessed: 21.01.2021]. </p> 
-            <p class="reference" id="r16">[16] Quick wxGUI Tutorial,Wik,[Online], Available: <a href="https://grasswiki.osgeo.org/wiki/Quick_wxGUI_tutorial">https://grasswiki.osgeo.org/wiki/Quick_wxGUI_tutorial</a> [Accessed: 20.01.2021].
-            <p class="reference" id="r13">[17] eigene aufgesetzte ownCloud </p> 
-            <p class="reference" id="r13">[18] eigene aufgesetzte ownCloud </p> 
+        <h2>11.Bibliography</h2>
+
+            <p class="reference" id="r1">[1] "Geospatial Database, Wikipedia". [Online]. Available:  <a href="https://en.wikipedia.org/wiki/Spatial_database#Geodatabase">https://en.wikipedia.org/wiki/Spatial_database#Geodatabase</a> [Accessed: 01.01.2021].</p>
+
+            <p class="reference" id="r2">[2] "An overview of Geodatabase", [Online]. Available: <a href="https://desktop.arcgis.com/en/arcmap/10.3/manage-data/geodatabases/what-is-a-geodatabase.htm">"https://desktop.arcgis.com/en/arcmap/10.3/manage-data/geodatabases/what-is-a-geodatabase.htm"</a> [Accessed: 29.12.2020].</p>
+
+        <p class="reference" id="r3">[3] "Datatype of geospatial database", [Online]. Available:<a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/types-of-geodatabases.htm">"https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/types-of-geodatabases.htm</a> [Accessed: 14.01.2021].</p>
+
+            <p class="reference" id="r4">[4] Amit Paul Chowdhury, "Top 10 best Geospatial tools for GIS", 2017. [Online]. Available:<a href="https://analyticsindiamag.com/top-10-best-geospatial-tools-gis-mapping-data-visualization/">https://analyticsindiamag.com/top-10-best-geospatial-tools-gis-mapping-data-visualization/ </a> [Accessed: 19.01.2021].</p>
+
+        <p class="reference" id="r5">[5] John Pyles, "Falconview", [Online]. Available: <a href="https://www.gtri.gatech.edu/initiatives/falconview"> https://www.gtri.gatech.edu/initiatives/falconview</a> [Accessed in 19.01.2021]</p>
+
+        <p class="reference" id="r6">[6] "Mapscaping ,Free Geoinformatics Software", [Online]. Available: <a href="https://mapscaping.com/pages/free-geoinformatics-software">https://mapscaping.com/pages/free-geoinformatics-software</a> [Accessed: 19.01.2021].</p>
+
+            <p class="reference" id="r7">[7] "OSGEO, GrassGIS". [Online]. Available: <a href="https://www.osgeo.org/projects/grass-gis/"> https://www.osgeo.org/projects/grass-gis/</a>[Accessed: 19.01.2021].</p>
+
+        <p class="reference" id="r8">[8] "ILWIS", [Online]. Available: <a href="https://www.itc.nl/ilwis/"> https://www.itc.nl/ilwis/ </a> [Accessed: 20.01.2021].</p>
+
+        <p class="reference" id="r9">[9] "MapWindow", [Online]. Available: <a href=" https://plagiarismdetector.net/"> https://plagiarismdetector.net/</a> [Accessed: 20.01.2021].</p>
+
+            <p class="reference" id="r10">[10] "QGIS, Wikipedia", [Online]. Available: <a href="https://en.wikipedia.org/wiki/QGIS">https://en.wikipedia.org/wiki/QGIS</a> [Accessed: 20.01.2021].</p>
+
+            <p class="reference" id="r11">[11] "OSGEO,gvSIG Desktop", [Online]. Available: <a href="https://www.osgeo.org/projects/gvsig/">https://www.osgeo.org/projects/gvsig/</a> [Accessed: 20.01.2021].</p>
+
+            <p class="reference" id="r12">[12] "oconrad recklov_w,SAGA GIS", [Online]. Available: <a href="https://sourceforge.net/projects/saga-gis/">https://sourceforge.net/projects/saga-gis/</a> [Accessed: 20.01.2021].</p>
+
+            <p class="reference" id="r13">[13] "uDIG GIS", [Online]. Available: <a href= "http://udig.refractions.net/"> http://udig.refractions.net/ </a> [Accessed: 20.01.2021].</p> 
+
+            <p class="reference" id="r14">[14] WHO/HQ/WHE/HIM/MAP (GIS team), Comparison of Geographic Information Systems (GIS) software ,WHO, Geneva,Created on March 12,2018</p>
+
+            <p class="reference" id="r15">[15] "GrassGIS", [Online]. Available: <a href= "https://grass.osgeo.org/download/data/">https://grass.osgeo.org/download/data/.</a> [Accessed: 21.01.2021].</p>
+
+            <p class="reference" id="r16">[16] "Quick wxGUI Tutorial, Wik", [Online]. Available: <a href="https://grasswiki.osgeo.org/wiki/Quick_wxGUI_tutorial">https://grasswiki.osgeo.org/wiki/Quick_wxGUI_tutorial</a> [Accessed: 20.01.2021].</p>
+
+            <p class="reference" id="r17">[17] MADDY BERGUM, "Geospatial Terms Made Easy: What Is Raster and Vector Data?", AUGUST 10, 2020, [Online]. Available:<a href="https://geospatial.com/category/terms-made-easy/">https://geospatial.com/category/terms-made-easy/</a> [Accessed: 03.01.2021].</p>
+
+            <p class="reference" id="r18">[18] Dayna Behm, "BAE Systems; Tony Bryan, Midwest Cyber Center; Joshua Lordemann, Leidos; and Steven R. Thomas, Ball Aerospace", February 1, 2018,[Online]. Available:<a href="http://trajectorymagazine.com/past-present-future-geospatial-data-use/">http://trajectorymagazine.com/past-present-future-geospatial-data-use/</a> [Accessed: 20.01.2021].</p>
+
+            <p class="reference" id="r19">[19] Akshithha, "What are the challenges in implementation of geospatial technologies?", 04/29/2017,[Online]. Available: <a href="https://www.geospatialworld.net/blogs/challenges-implementation-geospatial-technologies/">https://www.geospatialworld.net/blogs/challenges-implementation-geospatial-technologies/</a> [Accessed: 17.01.2021].</p> 
+            
+            <p class="reference" id="r20">[20]  Fig 1:Datatype of Geospatial Database,[Online]. Available: <a href="https://slideplayer.com/slide/7290685/24/images/9/3+Types+of+Geodatabases+Personal+Geodatabase+File+Geodatabase.jpg">https://slideplayer.com/slide/7290685/24/images/9/3+Types+of+Geodatabases+Personal+Geodatabase+File+Geodatabase.jpg</a> [Accessed: 17.01.2021].</p> 
+
+            <p class="reference" id="r21">[21]  HEBA SOFFAR,"Advantages and disadvantages" FEBRUARY 6, 2017, [Online]. Available: <a href="https://www.slideshare.net/SubtainHussainSyed/advantages-of-the-geodatabase">https://www.slideshare.net/SubtainHussainSyed/advantages-of-the-geodatabase.</a> [Accessed: 17.01.2021].</p>
+
+            <p class="reference" id="r22">[22]  HEBA SOFFAR, "Advantages and disadvantages" FEBRUARY 6, 2017, [Online]. Available: <a href="https://www.online-sciences.com/technology/gis-data-geographic-information-systems-uses-advantages-and-disadvantages">https://www.online-sciences.com/technology/gis-data-geographic-information-systems-uses-advantages-and-disadvantages</a> [Accessed: 17.01.2021].</p>
         
-	</section>
+  </section>
 </body>
 </html>
