@@ -4,4 +4,4 @@ Updated report of Seminar Webengineering
 
 HTML/CSS Template of Web Engineering Seminar.
 
-# How to contribute
+# How to contribute.
