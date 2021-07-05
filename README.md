@@ -1,4 +1,4 @@
-seminar-template
+seminar-
 ================
 Updated report of Seminar Webengineering
 
